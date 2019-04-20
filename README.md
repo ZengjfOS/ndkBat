@@ -10,14 +10,18 @@
 
 1. 使用Android Studio下载CMake、NDK；
 2. 可能会缺少**ninja**，可以单独下载，配置路径；
+3. NDK、CMake加入Windows环境变量，方便脚本调用；
 
 ## CMake使用方法
 
-[build/build.bat](build/build.bat)
+* [CMakeBuild.bat](CMakeBuild.bat)
+* 自己使用请修改该文件中的一些参数；
 
 ## Android.mk使用方法
 
-* [jni/Android.mk](jni/Android.mk)
-* [jni/Application.mk](jni/Application.mk)
-* 注意：运行`ndk-build`命令的位置是jni目录上一级目录；
+* [MKBuild.bat](MKBuild.bat)
+  * [jni/Android.mk](jni/Android.mk)
+  * [jni/Application.mk](jni/Application.mk)
+
+**注意**：运行`ndk-build`命令的位置是jni目录上一级目录；
 

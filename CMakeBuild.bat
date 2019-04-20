@@ -4,10 +4,10 @@ set build_type=Debug
 set gernerator="Ninja"
 set eabi=arm64-v8a
 
-if not exist %eabi% (
-    md %eabi%
+if not exist build\%eabi% (
+    md build\%eabi%
 )
-cd %eabi%
+cd build\%eabi%
 
 cmake ../../ ^
       -DCMAKE_TOOLCHAIN_FILE=%toolchain% ^
