@@ -1,8 +1,8 @@
 LOCAL_PATH := $(call my-dir)
 
-include $(CLEAR_VARS)
+$(info "target arch is: ${TARGET_ARCH_ABI}")
 
-LOCAL_MODULE := add
-LOCAL_SRC_FILES := src/add.cpp
+include $(LOCAL_PATH)/libstatic.mk
+include $(LOCAL_PATH)/libshared.mk
+include $(LOCAL_PATH)/libprelib.mk
 
-include $(BUILD_SHARED_LIBRARY)

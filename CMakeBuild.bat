@@ -1,3 +1,5 @@
+@echo off
+
 set toolchain=D:\Software\androidStudio\sdk\android-ndk-r17c\build\cmake\android.toolchain.cmake
 set android_ndk=D:\Software\androidStudio\sdk\android-ndk-r17c
 set build_type=Debug
